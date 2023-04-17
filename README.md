@@ -1,6 +1,5 @@
 # dobbuggi
 lstm 기반 전북대학교 챗봇 도북이 입니다!<br>
-![](./main.png)<br>
 
 # Project Goal
 - `딥러닝`과목에서 수강한 RNN,LSTM,GRU 아키텍쳐 활용
