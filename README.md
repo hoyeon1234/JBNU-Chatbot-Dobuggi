@@ -7,7 +7,9 @@ lstm 기반 전북대학교 챗봇 도북이 입니다!<br>
 - DB에서 배포까지 하나의 서비스를 관통하는 모든 프로세스 수행 
 - local 서버 만들어 보기.
 
-# stack - python,mysql
+# stack 
+- python
+- mysql
 
 # Results
 ![](./results/department.png)<br>
