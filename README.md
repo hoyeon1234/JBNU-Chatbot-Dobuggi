@@ -1,11 +1,11 @@
 # dobbuggi
-lstm 기반 전북대학교 챗봇 도북이 이에요!
-![](./main.png)
+lstm 기반 전북대학교 챗봇 도북이 입니다!<br>
+![](./main.png)<br>
 
 # 결과
-![](./results/department.png)
-![](./results/position.png)
-![](./results/rice.png)
+![](./results/department.png)<br>
+![](./results/position.png)<br>
+![](./results/rice.png)<br>
 
 
 
