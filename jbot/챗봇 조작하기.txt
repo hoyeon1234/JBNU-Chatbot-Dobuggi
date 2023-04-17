@@ -1,0 +1,36 @@
+챗봇 답변용(학습용)데이터
+qna에서 create_train_data_xlsx,load_train_data 2가지만 실행
+
+딥러닝 모델용 코퍼스 데이터 추가하기
+dict에서 create_corpus,create_dict 2가지 실행
+test에서 model_dict_test실행
+
+딥러닝 모델 학습하기
+intent에서 train_model 1가지 실행
+test에서 model_intent_test 실행!
+
+개체명 인식모델 
+nerdata에서 create_ner_data 실행 #마지막 최종 할때 이건 보류(한별이가 최종 파일로 줌)
+test에서 model_ner_test 실행!
+
+클라이언트 테스트
+bot.py실행
+chatbot_client_test실행
+
+LSTM(10) dropout = 0.8
+L2 0.01 Adam 0.0001 Pt 5
+523/523 [==============================] - 3s 5ms/step - loss: 0.6021 - accuracy: 0.7873 - val_loss: 0.4765 - val_accuracy: 0.8108
+75/75 [==============================] - 0s 2ms/step - loss: 0.4727 - accuracy: 0.8058
+
+LSTM(10) dropout = 0.8
+L2 0.01 Adam 0.0001 Pt 10
+523/523 [==============================] - 3s 5ms/step - loss: 0.5899 - accuracy: 0.7771 - val_loss: 0.6719 - val_accuracy: 0.8024
+75/75 [==============================] - 0s 2ms/step - loss: 0.6753 - accuracy: 0.8044
+
+LSTM(30) dropout = 0.8
+L2 0.01 Adam 0.0001 Pt 10
+523/523 [==============================] - 3s 6ms/step - loss: 0.1476 - accuracy: 0.9660 - val_loss: 0.0840 - val_accuracy: 0.9889
+75/75 [==============================] - 0s 2ms/step - loss: 0.1505 - accuracy: 0.9853
+
+
+

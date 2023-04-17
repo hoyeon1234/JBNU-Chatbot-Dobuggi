@@ -1,0 +1,21 @@
+import sys
+pckg_path = "C:/Users/22668/Desktop"
+sys.path.append(pckg_path)
+from jbot.config.DatabaseConfig import *
+from jbot.config.PathConfig import *
+from jbot.utils.Preprocess import Preprocess
+from jbot.utils.Database import Database
+from jbot.models.ner.NerModel import NerModel
+from jbot.models.intent.IntentModel import IntentModel
+from jbot.models.sub.Toolbox import Toolbox
+from jbot.utils.FindAnswer import FindAnswer
+
+
+db = Database(
+    host = DB_HOST,user = DB_USER,password = DB_PASSWORD,db_name = DB_NAME
+)
+p = Preprocess(word2index_dic = chatbot_dict_path,user_dic = user_dic_path)
+intent = IntentModel(model_name = intent_model_path,intent_mapping = intent_mapping_path,preprocess = p)
+ner = NerModel(ner_mapping_data = ner_final)
+tbx = Toolbox(ner_final)
+f = FindAnswer(db,intent,ner,tbx)
